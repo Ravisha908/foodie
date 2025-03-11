@@ -30,8 +30,13 @@ function Header() {
 }
 function Searchbar() {
   return (
-    <div>
-      <h2>This is Searchbar</h2>
+    <div className="searchbar_container">
+      <form>
+        <input type="text" placeholder="Search here" />
+        <input type="submit" value="Search" />
+      </form>
+
+      <div></div>
     </div>
   );
 }
