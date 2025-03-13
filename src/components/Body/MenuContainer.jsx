@@ -1,5 +1,6 @@
 import { menuDetails } from "../../utils/constants";
 import MenuCard from "./Menucard";
+import "../../App.css";
 
 function MenuContainer() {
   return (

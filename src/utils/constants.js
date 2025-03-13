@@ -1,6 +1,6 @@
-import pizza from "/images/pizza.avif";
-import chicken from "/images/chicken.avif";
-import biryani from "/images/biryani.avif";
+import pizza from "../assets/images/pizza.avif";
+import chicken from "../assets/images/chicken.avif";
+import biryani from "../assets/images/biryani.avif";
 
 export const menuDetails = [
   {

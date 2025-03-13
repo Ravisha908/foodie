@@ -1,3 +1,5 @@
+import "../../App.css";
+
 function MenuCard({ name, img, rating, location }) {
   return (
     <div className="menu_card">

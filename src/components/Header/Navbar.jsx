@@ -1,3 +1,5 @@
+import "../../App.css";
+
 function Navbar() {
   return (
     <ul className="navbar">
