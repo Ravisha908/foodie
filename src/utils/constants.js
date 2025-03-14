@@ -41,7 +41,7 @@ export const menuDetails = [
   {
     name: "Tandoori Wok",
     img: chicken,
-    rating: 4.6,
+    rating: 5,
     cusinies: "Grill, Pizza",
     primeLocation: "Central Bangalore",
   },
