@@ -67,3 +67,5 @@ export const menuDetails = [
     primeLocation: "Central Bangalore",
   },
 ];
+
+export const fruitList = ["Apple", "Banana", "pineapple", "Orange", "Grapes"];

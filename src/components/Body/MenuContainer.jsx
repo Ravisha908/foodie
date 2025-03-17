@@ -2,6 +2,7 @@ import { menuDetails } from "../../utils/constants";
 import MenuCard from "./Menucard";
 import "../../App.css";
 import { useState } from "react";
+import Shimmer from "./Shimmer";
 
 function MenuContainer() {
   const [menuDetails2, setMenuDetails2] = useState(menuDetails);
@@ -40,17 +41,21 @@ function MenuContainer() {
         </form>
       </div>
       <div className="menucard_container">
-        {menuDetails2.map((menu, i) => {
-          return (
-            <MenuCard
-              key={i}
-              name={menu.name}
-              img={menu.img}
-              rating={menu.rating}
-              location={menu.primeLocation}
-            />
-          );
-        })}
+        {menuDetails.length === 0 ? (
+          <Shimmer />
+        ) : (
+          menuDetails2.map((menu, i) => {
+            return (
+              <MenuCard
+                key={i}
+                name={menu.name}
+                img={menu.img}
+                rating={menu.rating}
+                location={menu.primeLocation}
+              />
+            );
+          })
+        )}
       </div>
     </div>
   );
