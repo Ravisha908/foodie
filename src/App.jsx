@@ -1,15 +1,17 @@
 import "./App.css";
-import Header from "./components/Header/header";
-import Searchbar from "./components/Body/Searchbar";
-import Body from "./components/Body/Body";
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./Pages/Home";
+import About from "./Pages/About";
 
 function App() {
   return (
-    <>
-      <Header />
-      <Searchbar />
-      <Body />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

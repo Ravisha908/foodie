@@ -2,11 +2,11 @@ import MenuContainer from "./MenuContainer";
 import "../../App.css";
 import Assignment from "../assignment/Assignment";
 
-function Body() {
+function Body({ dark, setDark }) {
   return (
     <div>
-      <MenuContainer />
-      <Assignment />
+      <MenuContainer dark={dark} setDark={setDark} />
+      {/* <Assignment /> */}
     </div>
   );
 }

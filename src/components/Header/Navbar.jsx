@@ -3,8 +3,12 @@ import "../../App.css";
 function Navbar() {
   return (
     <ul className="navbar">
-      <li>Home</li>
-      <li>About</li>
+      <li>
+        <a href="/">Home</a>
+      </li>
+      <li>
+        <a href="/about"> About</a>
+      </li>
       <li>Services</li>
     </ul>
   );

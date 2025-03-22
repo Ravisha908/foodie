@@ -4,6 +4,7 @@ import FruitList from "./FruitList";
 import Greeting from "./Greeting";
 import HelloWorld from "./HelloWorld";
 import SimpleForm from "./SimpleForm";
+import ToggleText from "./ToggleText";
 import UserStatus from "./UserStatus";
 
 function Assignment() {
@@ -12,6 +13,7 @@ function Assignment() {
       <HelloWorld />
       <Greeting name="Ravi" />
       <Counter />
+      <ToggleText />
       <FruitList fruitList={fruitList} />
       <UserStatus isLoggedIn={true} />
       <SimpleForm />
